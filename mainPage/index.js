@@ -5,8 +5,7 @@ const registerContainer = document.querySelector('#registerContainer')
 const resetBtn = document.querySelector('#cross')
 const resetdivsignin = document.querySelector('.signin_cross_icon');
 const resetdivsignup = document.querySelector('.signup_cross_icon');
-
-
+const navScrollBar = document.querySelector('navbarScroll')
 loginBtn.addEventListener('click', () => {
     loginContainer.style.display = "flex"
 })
@@ -21,4 +20,5 @@ resetdivsignup.addEventListener("click", () => {
 resetdivsignin.addEventListener("click", () => {
     loginContainer.style.display = "none"
 })
+const windowWidth = window.innerWidth || document.documentElement.clientWidth;
 
